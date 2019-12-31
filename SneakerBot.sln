@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2003
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SneakerBot", "SneakerBot\SneakerBot.csproj", "{33180CD2-ECF8-463E-B4A9-5F72693F054E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{F3AECF35-381B-47A2-817B-371AFECA23C9}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.pdb = .nuget\NuGet.pdb
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{33180CD2-ECF8-463E-B4A9-5F72693F054E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33180CD2-ECF8-463E-B4A9-5F72693F054E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33180CD2-ECF8-463E-B4A9-5F72693F054E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{33180CD2-ECF8-463E-B4A9-5F72693F054E}.Debug|x86.Build.0 = Debug|Any CPU
+		{33180CD2-ECF8-463E-B4A9-5F72693F054E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33180CD2-ECF8-463E-B4A9-5F72693F054E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33180CD2-ECF8-463E-B4A9-5F72693F054E}.Release|x86.ActiveCfg = Release|x86
+		{33180CD2-ECF8-463E-B4A9-5F72693F054E}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {832E026B-9C0D-4C22-8B1E-CC622A7463C6}
+	EndGlobalSection
+EndGlobal

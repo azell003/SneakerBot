@@ -1,0 +1,69 @@
+﻿<Window x:Class="SneakerBot.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SneakerBot"
+        Title="Z-SneakerBot" Height="450" Width="800"
+        Loaded="Window_Loaded"
+        Closed="Window_Closed">
+    <DockPanel>
+        <Grid Height="100" Background="#FFA2C7BB" DockPanel.Dock="Top">
+            <ComboBox x:Name="TemplateBox" HorizontalAlignment="Left" Margin="10,37,0,0" VerticalAlignment="Top" Width="197" Height="26" SelectedIndex="0" SelectedValuePath="Tag">
+                <ComboBoxItem Content="SneakersNStuff" x:Name="SneakersNStuff" Tag="SneakerBot.Pages.SneakersNStuff"/>
+            </ComboBox>
+            <TextBox x:Name="productUrl" Margin="261,37,10,37"/>
+            <Label x:Name="label" Content="Template" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.928,0.409"/>
+            <Label x:Name="label2" Content="Product Url" HorizontalAlignment="Left" Margin="261,11,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.928,0.409"/>
+            <Button x:Name="Launch" Content="Launch" HorizontalAlignment="Left" Margin="700,68,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.711,0.52" Click="Launch_Click"/>
+        </Grid>
+        <Grid DockPanel.Dock="Top">
+            <TextBlock Margin="5" Text="Profile Information"/>
+        </Grid>
+        <Grid VerticalAlignment="Top" Margin="5" DockPanel.Dock="Top">
+            <Grid.Resources>
+                <Style TargetType="{x:Type TextBox}">
+                    <Setter Property="Margin" Value="0,0,0,4" />
+                </Style>
+            </Grid.Resources>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="First Name" HorizontalAlignment="Right" Margin="5" />
+            <TextBox x:Name="FirstName" Grid.Column="1" Grid.ColumnSpan="1"/>
+            <TextBlock Text="Last Name" Grid.Column="2" HorizontalAlignment="Right" Margin="5" />
+            <TextBox x:Name="LastName" Grid.Column="3" Grid.ColumnSpan="1"/>
+            <TextBlock Text="Email" HorizontalAlignment="Right" Margin="5" Grid.Row="2"/>
+            <TextBox x:Name="Email" Grid.Column="1" Grid.ColumnSpan="1" Grid.Row="2"/>
+            <TextBlock Text="Phone No." HorizontalAlignment="Right" Margin="5" Grid.Row="2" Grid.Column="2"/>
+            <TextBox x:Name="PhoneNo" Grid.Column="3" Grid.ColumnSpan="1" Grid.Row="2"/>
+            <TextBlock Text="Address" HorizontalAlignment="Right" Margin="5" Grid.Row="3"/>
+            <TextBox x:Name="BillingAddress" Grid.Column="1" Grid.ColumnSpan="1" Grid.Row="3"/>
+            <TextBlock Text="City" HorizontalAlignment="Right" Margin="5" Grid.Row="3" Grid.Column="2"/>
+            <TextBox x:Name="City" Grid.Column="3" Grid.ColumnSpan="1" Grid.Row="3"/>
+            <TextBlock Text="Zip Code" HorizontalAlignment="Right" Margin="5" Grid.Row="3" Grid.Column="4"/>
+            <TextBox x:Name="ZipCode" Grid.Column="5" Grid.ColumnSpan="1" Grid.Row="3"/>
+            <TextBlock Text="CC number" HorizontalAlignment="Right" Margin="5" Grid.Row="4"/>
+            <TextBox x:Name="CCNumber" Grid.Column="1" Grid.ColumnSpan="1" Grid.Row="4"/>
+            <TextBlock Text="Expiration Date" HorizontalAlignment="Right" Margin="5" Grid.Row="4" Grid.Column="2"/>
+            <TextBox x:Name="ExpDate" Grid.Column="3" Grid.ColumnSpan="1" Grid.Row="4"/>
+            <TextBlock Text="CVC" HorizontalAlignment="Right" Margin="5" Grid.Row="4" Grid.Column="4"/>
+            <TextBox x:Name="CVC" Grid.Column="5" Grid.ColumnSpan="1" Grid.Row="4"/>
+            <TextBlock Text="Shoe Size" HorizontalAlignment="Right" Margin="5" Grid.Row="5"/>
+            <ComboBox x:Name="ShoeSize" HorizontalAlignment="Left" VerticalAlignment="Center" SelectedIndex="0" Grid.Row="5" Grid.Column="1"></ComboBox>
+        </Grid>
+    </DockPanel>
+</Window>
