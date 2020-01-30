@@ -9,8 +9,9 @@
         Closed="Window_Closed">
     <DockPanel>
         <Grid Height="100" Background="#FFA2C7BB" DockPanel.Dock="Top">
-            <ComboBox x:Name="TemplateBox" HorizontalAlignment="Left" Margin="10,37,0,0" VerticalAlignment="Top" Width="197" Height="26" SelectedIndex="0" SelectedValuePath="Tag">
+            <ComboBox x:Name="TemplateBox" HorizontalAlignment="Left" Margin="10,37,0,0" VerticalAlignment="Top" Width="197" Height="26" SelectedIndex="0" SelectedValuePath="Tag" SelectionChanged="TemplateBox_SelectionChanged">
                 <ComboBoxItem Content="SneakersNStuff" x:Name="SneakersNStuff" Tag="SneakerBot.Pages.SneakersNStuff"/>
+                <ComboBoxItem Content="FunkoShop" x:Name="FunkoShop" Tag="SneakerBot.Pages.FunkoShop"/>
             </ComboBox>
             <TextBox x:Name="productUrl" Margin="261,37,10,37"/>
             <Label x:Name="label" Content="Template" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.928,0.409"/>
@@ -50,10 +51,12 @@
             <TextBox x:Name="Email" Grid.Column="1" Grid.ColumnSpan="1" Grid.Row="2"/>
             <TextBlock Text="Phone No." HorizontalAlignment="Right" Margin="5" Grid.Row="2" Grid.Column="2"/>
             <TextBox x:Name="PhoneNo" Grid.Column="3" Grid.ColumnSpan="1" Grid.Row="2"/>
-            <TextBlock Text="Address" HorizontalAlignment="Right" Margin="5" Grid.Row="3"/>
-            <TextBox x:Name="BillingAddress" Grid.Column="1" Grid.ColumnSpan="1" Grid.Row="3"/>
-            <TextBlock Text="City" HorizontalAlignment="Right" Margin="5" Grid.Row="3" Grid.Column="2"/>
-            <TextBox x:Name="City" Grid.Column="3" Grid.ColumnSpan="1" Grid.Row="3"/>
+            <TextBlock Text="Address L1" HorizontalAlignment="Right" Margin="5" Grid.Row="3"/>
+            <TextBox x:Name="BillingAddress1" Grid.Column="1" Grid.ColumnSpan="1" Grid.Row="3"/>
+            <TextBlock Text="Address L2" HorizontalAlignment="Right" Margin="5" Grid.Row="3" Grid.Column="2"/>
+            <TextBox x:Name="BillingAddress2" Grid.Column="3" Grid.ColumnSpan="1" Grid.Row="3"/>
+            <TextBlock Text="City" HorizontalAlignment="Right" Margin="5" Grid.Row="2" Grid.Column="4"/>
+            <TextBox x:Name="City" Grid.Column="5" Grid.ColumnSpan="1" Grid.Row="2"/>
             <TextBlock Text="Zip Code" HorizontalAlignment="Right" Margin="5" Grid.Row="3" Grid.Column="4"/>
             <TextBox x:Name="ZipCode" Grid.Column="5" Grid.ColumnSpan="1" Grid.Row="3"/>
             <TextBlock Text="CC number" HorizontalAlignment="Right" Margin="5" Grid.Row="4"/>
@@ -64,6 +67,8 @@
             <TextBox x:Name="CVC" Grid.Column="5" Grid.ColumnSpan="1" Grid.Row="4"/>
             <TextBlock Text="Shoe Size" HorizontalAlignment="Right" Margin="5" Grid.Row="5"/>
             <ComboBox x:Name="ShoeSize" HorizontalAlignment="Left" VerticalAlignment="Center" SelectedIndex="0" Grid.Row="5" Grid.Column="1"></ComboBox>
+            <TextBlock Text="Quantity" HorizontalAlignment="Right" Margin="5" Grid.Row="5" Grid.Column="2"/>
+            <ComboBox x:Name="Quantity" HorizontalAlignment="Left" VerticalAlignment="Center" SelectedIndex="0" Grid.Row="5" Grid.Column="3"></ComboBox>
         </Grid>
     </DockPanel>
 </Window>

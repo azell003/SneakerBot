@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SneakerBot.Framework
 {
@@ -13,8 +9,10 @@ namespace SneakerBot.Framework
         public string lastName;
         public string email;
         public string phoneNo;
-        public string billingAddress;
+        public string billingAddressLine1;
+        public string billingAddressLine2;
         public string city;
+        public string quantity;
         public string zipcode;
         public string shoeSize;
         public string ccNumber;

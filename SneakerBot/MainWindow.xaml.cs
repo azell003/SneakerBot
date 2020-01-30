@@ -28,6 +28,7 @@ namespace SneakerBot
         private void Window_Loaded(object sender, EventArgs e)
         {
             ShoeSize.ItemsSource = ExtendendRange(4.0, 15.0, 0.5).Select(x => x.ToString()).ToList();
+            Quantity.ItemsSource = ExtendendRange(1, 3, 1).Select(x => x.ToString()).ToList();
 
             if(File.Exists(profilePath))
             {
@@ -43,8 +44,10 @@ namespace SneakerBot
                 LastName.Text = savedProfile.lastName;
                 Email.Text = savedProfile.email;
                 PhoneNo.Text = savedProfile.phoneNo;
-                BillingAddress.Text = savedProfile.billingAddress;
+                BillingAddress1.Text = savedProfile.billingAddressLine1;
+                BillingAddress2.Text = savedProfile.billingAddressLine2;
                 City.Text = savedProfile.city;
+                Quantity.Text = savedProfile.quantity;
                 ZipCode.Text = savedProfile.zipcode;
                 ShoeSize.Text = savedProfile.shoeSize;
                 CCNumber.Text = savedProfile.ccNumber;
@@ -105,8 +108,10 @@ namespace SneakerBot
                 lastName = LastName.Text,
                 email = Email.Text,
                 phoneNo = PhoneNo.Text,
-                billingAddress = BillingAddress.Text,
+                billingAddressLine1 = BillingAddress1.Text,
+                billingAddressLine2 = BillingAddress2.Text,
                 city = City.Text,
+                quantity = Quantity.Text,
                 zipcode = ZipCode.Text,
                 shoeSize = ShoeSize.Text,
                 ccNumber = CCNumber.Text, 
@@ -122,6 +127,11 @@ namespace SneakerBot
             {
                 yield return i;
             }
+        }
+
+        private void TemplateBox_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
+        {
+
         }
     }
 }

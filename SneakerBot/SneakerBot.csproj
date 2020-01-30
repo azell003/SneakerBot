@@ -105,6 +105,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Framework\PageObjects\IPageObject.cs" />
+    <Compile Include="Pages\FunkoShop.cs" />
     <Compile Include="Pages\SneakersNStuff.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
